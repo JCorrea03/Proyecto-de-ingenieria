@@ -1,0 +1,172 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente general */
+body {
+    font-family: 'Roboto', sans-serif; /* Usamos Google Fonts */
+    background-color: #187614; /* Fondo verde para un contraste bonito */
+    color: white; /* El texto será blanco por defecto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asegura que todo esté centrado verticalmente */
+    padding: 20px; /* Añadir un poco de espacio alrededor */
+}
+
+/* Centrado y estilo general para la página */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centrar el texto */
+    max-width: 100%; /* Asegura que todo esté bien distribuido */
+}
+
+/* Logo - centrado y ajustado */
+.logo {
+    width: 250px; /* Reducido el tamaño del logo para hacerlo más elegante */
+    height: auto;
+    margin-bottom: 30px; /* Espacio debajo del logo */
+}
+
+/* Estilo para el escáner QR */
+#reader {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px; /* Espacio debajo del escáner */
+    border: 2px solid #fff; /* Borde blanco alrededor del escáner */
+    border-radius: 10px;
+}
+
+/* Contenido que aparece después de escanear */
+#show {
+    display: none;
+    color: #fff; /* Asegura que el texto sea blanco */
+}
+
+/* Título de otros productos de la misma categoría */
+#show h4 {
+    font-size: 1.5rem; /* Aumentamos el tamaño del texto de este título */
+    margin-bottom: 20px; /* Añadimos más espacio debajo */
+    margin-top: 30px; /* Añadimos espacio arriba para que no esté tan cerca del contenido anterior */
+}
+
+
+#result {
+    font-size: 2rem; /* Aumentamos el tamaño del texto del número de producto */
+    margin-bottom: 20px;
+}
+
+#product-info {
+    margin-top: 20px;
+    font-size: 1.2rem; /* Aumentamos ligeramente el tamaño de la info del producto */
+}
+
+#product-info img {
+    width: 200px; /* Tamaño fijo para la imagen */
+    height: auto;
+    border-radius: 15px; /* Redondear los bordes de la imagen */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Agregar una ligera sombra para dar profundidad */
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
+/* Productos relacionados */
+#related-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#related-products div {
+    margin: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo con ligera transparencia */
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 200px;
+}
+
+#related-products img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#related-products p {
+    font-size: 1rem;
+    color: #F2FB58; /* Color amarillo claro para el texto de los productos */
+}
+
+/* Botón de acción */
+.boton {
+    width: 200px;
+    height: 60px;
+    background-color: #1d8a20; /* Fondo verde más brillante */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Añadimos sombra para el botón */
+}
+
+.boton:hover {
+    background-color: #1b7a1e; /* Color más oscuro al pasar el cursor */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Sombra más grande al hacer hover */
+}
+
+.escanea {
+    font-size: 1.5rem; /* Aumentamos el tamaño de las instrucciones */
+    color: #F2FB58; /* Amarillo claro para el texto de instrucciones */
+    margin-top: 20px;
+}
+
+/* Estilo de la sección de otros productos */
+#related-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Grid para productos */
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Mejoras visuales generales */
+h1, h2, h3, h4, h5 {
+    font-size: 2rem; /* Tamaño mayor para los títulos */
+    margin-bottom: 10px;
+}
+
+/* Media query para mejorar la visualización en dispositivos móviles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    #reader {
+        max-width: 90%;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .boton {
+        width: 180px;
+        height: 50px;
+    }
+
+    .escanea {
+        font-size: 1.2rem;
+    }
+
+    #related-products {
+        grid-template-columns: 1fr 1fr;
+    }
+}

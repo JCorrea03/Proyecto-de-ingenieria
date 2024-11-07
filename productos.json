@@ -1,0 +1,58 @@
+{
+    "908345": {
+        "nombre": "FizzSpark",
+        "empresa": "Lumina",
+        "categoria": "Gaseosa",
+        "precio": "$2800",
+        "contaminacion": 2,
+        "imagen": "img/908345.jpeg"
+    },
+    "908346": {
+        "nombre": "ColaMax",
+        "empresa": "BeverageCo",
+        "categoria": "Gaseosa",
+        "precio": "$3500",
+        "contaminacion": 6,
+        "imagen": "img/908346.jpeg"
+    },
+    "112234": {
+        "nombre": "LimeFresh",
+        "empresa": "FruitCorp",
+        "categoria": "Gaseosa",
+        "precio": "$2500",
+        "contaminacion": 5,
+        "imagen": "img/112234.png"
+    },
+    "102349": {
+        "nombre": "Sparkle Soda",
+        "empresa": "VitaBeverages",
+        "categoria": "Gaseosa",
+        "precio": "$2200",
+        "contaminacion": 1,
+        "imagen": "img/102349.png"
+    },
+    "302987": {
+        "nombre": "Tropical Juice",
+        "empresa": "NatureJuice",
+        "categoria": "Jugo",
+        "precio": "$1800",
+        "contaminacion": 3,
+        "imagen": "img/302987.png"
+    },
+    "475839": {
+        "nombre": "Pure Orange",
+        "empresa": "CitrusGrow",
+        "categoria": "Jugo",
+        "precio": "$2200",
+        "contaminacion": 2,
+        "imagen": "img/475839.png"
+    },
+    "193847": {
+        "nombre": "Green Smoothie",
+        "empresa": "VeggieBlends",
+        "categoria": "Jugo",
+        "precio": "$3000",
+        "contaminacion": 4,
+        "imagen": "img/193847.png"
+    }
+    }
